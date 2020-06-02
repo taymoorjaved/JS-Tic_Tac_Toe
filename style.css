@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: monospace;
+    background: #ffd2d2;
+}
+
+.game-container {
+    width: 450px;
+    margin: auto;
+    border: 1px solid;
+}
+
+.row{
+    display: flex;
+}
+
+.inner-box{
+    width: 33.3%;
+    height: 152px;
+    background: #fffdc9;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.inner-box:hover {
+    border: 1px solid red;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+    color: red;
+    font-size: 25px;
+}
+
+@keyframes blinker {
+    100% {
+        opacity: 0;
+    }
+}
+
+/* frist section */
+.player-icon{
+    font-size: 85px;
+    margin: auto;
+}
+
+input[type="text"] {
+    padding: 8px 91px;
+    text-align: center;
+    background: black;
+    color: white;
+    border: 1px;
+}
+
+.btn {
+    margin-top: 2px;
+    background: #85ff83;
+    padding: 15px 143px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: green;
+    color: white;
+    border: 1px solid black;
+}
+
+.player-label{
+    font-size: 17px;
+}
+
+.error {
+    font-size: 20px;
+    color: white;
+    background: red;
+}
+
+.first-section {
+    width: 374px;
+    text-align: center;
+    margin: auto;
+}
+
+.first-player {
+    border: 1px solid;
+    padding: 8px;
+    margin-top: 7px;
+    background: #ffbaba;
+}
+
+
+.second-player {
+    border: 1px solid;
+    padding: 8px;
+    margin-top: 2px;
+    background: #ffbaba;
+}
+
+/* win message */
+
+.win-div {
+    margin-top: 147px;
+    padding: 12px;
+    width: 229px;
+    background: black;
+    position: fixed;
+    margin-left: 550px;
+}
+
+.win-message{
+    color: white;
+}
+.message-btn {
+    margin-top: 2px;
+    background: #85ff83;
+    padding: 7px 71px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.vs-image {
+        margin-top: -19px;
+        margin-bottom: -33px;
+        height: 86px;  
+}

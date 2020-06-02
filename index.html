@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="title-header">
+            <h1>TIC TAC TOE😋</h1>
+        </div>
+        <div class="win-div" style="display: none;">
+            <h2 class="win-message">.</h2>
+            <button class="message-btn" onClick="window.location.reload();" >Restart Game</button>
+        </div>
+        <div class="first-section">
+            <div class="error"></div>
+            <div class="players">
+            <div class="first-player">
+                <p class="player-icon" style="color: red;">X</p>
+                <p class="player-label">Frist Player Name</p>
+                <input type="text" id="first-player" placeholder="First Player Name">
+            </div>
+            <img src="https://pngimage.net/wp-content/uploads/2018/06/vs-em-png-1.png" alt="vs" class="vs-image">
+            <div class="second-player">
+                <p class="player-icon" style="color: green;">0</p>
+                <p class="player-label">Second Player Name</p>
+                <input type="text"  id="second-player" placeholder="Second Player Name">
+            </div>
+            </div>
+            <button class="btn" onclick="nextsection()" >START GAME</button>
+        </div>
+        <div class="second-section" style="display: none;">
+                <div class="notifation-bar">
+                    <h3 class="current-message blink_me">.</h3>
+                </div>
+                <div class="game-container">
+            
+                    <div class="row first-row">
+                        <div class="inner-box first-row-1"> <!-- icons --> </div>
+                        <div class="inner-box first-row-2"> <!-- icons --> </div> 
+                        <div class="inner-box first-row-3"> <!-- icons --> </div>
+                    </div>
+
+                    <div class="row second-row">
+                        <div class="inner-box second-row-1"> <!-- icons --> </div>
+                        <div class="inner-box second-row-2"> <!-- icons --> </div>
+                        <div class="inner-box second-row-3"> <!-- icons --> </div>
+                    </div>
+
+                    <div class="row third-row">
+                        <div class="inner-box third-row-1"> <!-- icons --> </div>
+                        <div class="inner-box third-row-2"> <!-- icons --> </div>
+                        <div class="inner-box third-row-3"> <!-- icons --> </div>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
